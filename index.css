@@ -1,0 +1,162 @@
+   body {
+    color: white; /* Define a cor do texto como branco */
+    background-color: black; /* Define a cor de fundo como preto */
+    font-family: Arial, Helvetica, sans-serif ; /* Define a fonte */
+}
+   
+   
+   ul {
+     display: flex;
+     justify-content: space-between; /* Distribui o espaço entre os itens igualmente */
+     list-style-type: none; /* Remove os marcadores padrão das listas */
+     align-items: center;
+   
+   }
+   
+   a {
+       color: white;
+       text-decoration: none;
+   }
+   
+   img { 
+       width: 200px; /* Define a largura da imagem */
+       height: 200px; /* Define a altura da imagem */
+       border-radius: 70%; /* Faz com que a imagem tenha bordas arredondadas*/
+       border: 5px solid rgb(220, 7, 107);
+   }
+
+   .center {
+    text-align: center;
+   }
+
+   /* Estilo para cabeçalhos */
+   h1 {
+       color: rgb(220, 7, 107);
+   }
+   /* Estilo para a classe container */
+   .container {
+        padding: 7px 40px;
+   }
+   nav a:hover,form .botao input:hover{
+       color: rgb(220, 7, 107);
+   }
+
+   /* Estilo para botões dentro da classe botao ao passar o mouse */
+   .botao input:hover{
+       box-shadow: 0px 0px 8px;
+       transform: scale(1.05);
+   }
+   
+   section.contatoform {
+       padding: 0px 80px;
+   
+   }
+   
+   /* Estilo para o formulário */
+   form{
+       max-width: 500px;
+       margin: 0 auto;
+       justify-content: center;
+       flex-direction: column; /* Alinha o título em uma coluna */
+       gap: 10px;
+       margin-top: 40px;
+   
+   }
+   /* Estilo para os campos de entrada e áreas de texto do formulário */
+   form input, form textarea{
+       width: 100%;
+       background-color: rgba(51, 51, 51, 0.955) ;
+       border: 0;
+       outline: 0;
+       padding: 20px 15px;
+       border-radius: 15px;
+       color: aliceblue;
+       font-size: 18px;
+   
+   }
+   form textarea{
+       resize: none;
+       height: 110px; ;
+   }
+   form input::placeholder{
+       color: rgb(220, 7, 107);
+   }
+
+   /* Estilo para o título na seção de contato */
+   .titulocontato{
+   
+       max-width: 500px;
+       margin: 0 auto;
+       justify-content: center;
+       flex-direction: column;
+       gap: 10px;
+       font-size: 33px;
+       text-align: center;
+   }
+      
+   .contact{
+       color: rgb(241, 169, 211);
+       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+   }
+
+   /* Estilo para o botão dentro do formulário */
+   form .botao{
+       margin-top: 20px;
+       text-align: center ;
+   }
+   form .botao input{
+     width: 120px; /* Define a largura do botão */
+     background-color: rgb(241, 169, 211); 
+     color: black;
+     font-weight: 700;
+     cursor: pointer; /* Muda o cursor para um ponteiro ao passar sobre o botão */
+     transition: .2s;
+   }
+
+   /* Estilo para a seção do portfólio */
+   section.portfolio{
+       padding: 80px 4%;
+       box-shadow:0 0 40px 10px #ffffff1f ;
+   }
+   section.portfolio.flex{
+       justify-content:space-around ;
+   
+
+/* Estilo para a imagem dentro do portfólio */
+   }
+   .img-port{
+    width: 350px;
+    height: 250px;
+    background-size: cover;
+    background-position: 100% 0%; 
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 45px;
+    position: relative;
+}
+ .img-port:hover{
+    background-position: 100% 100%; 
+}
+/* Estilo para o overlay sobre a imagem */
+ .overlay{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.741);
+   border-radius: 40px; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 24px;
+   font-weight: 600;
+   color: aliceblue;
+   opacity: 0;
+   transition: .5s;
+}
+
+
+   .overlay:hover{
+       opacity: 1;
+   }
